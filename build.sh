@@ -1,10 +1,7 @@
 #  sync rom
 repo init --depth=1 --no-repo-verify -u https://github.com/VoltageOS/manifest.git -b 13 -g default,-mips,-darwin,-notdefault
+git clone https://github.com/DESTROYER3264/local_manifest --depth 1 -b vos .repo/local_manifests
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j16
-git clone --depth=1 https://github.com/PunisherxD/device_motorola_liber -b VoltageOS device/motorola/liber
-git clone --depth=1 https://github.com/menorziin/vendor_motorola_liber -b lineage-20 vendor/motorola/liber
-git clone --depth=1 https://github.com/menorziin/kernel_motorola_liber -b lineage-20 kernel/motorola/liber
-git clone --depth=1 https://github.com/sm6150-liber/android_packages_apps_MotoActions -b lineage-20.0 packages/apps/MotoActions
 
 # build rom
 curl -Lo barom.sh https://raw.githubusercontent.com/alanndz/barom/main/barom.sh
