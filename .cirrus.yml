@@ -16,7 +16,7 @@ task:
   stateful: true
   timeout_in: 120m
   container:
-    image: alanndz/ubuntu:22.04
+    image: d34dpul32/ubuntu:22.04
     cpu: 8
     memory: 32G
 
