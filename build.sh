@@ -1,8 +1,7 @@
 #  sync rom
-repo init --depth=1 --no-repo-verify -u https://github.com/bananadroid/android_manifest.git -b 13 -g default,-mips,-darwin,-notdefault
+repo init --depth=1 --no-repo-verify -u https://github.com/bananadroid/android_manifest.git -b 13 --git-lfs -g default,-mips,-darwin,-notdefault
 git clone https://github.com/DESTROYER3264/local_manifest --depth 1 -b banana .repo/local_manifests
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j16
-git -C "external/chromium-webview/prebuilt/arm64" lfs pull https://github.com/LineageOS/android_external_chromium-webview_prebuilt_arm64 main
 
 # build rom
 curl -Lo barom.sh https://raw.githubusercontent.com/alanndz/barom/main/barom.sh
