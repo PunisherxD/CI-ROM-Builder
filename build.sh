@@ -9,6 +9,6 @@ chmod +x barom.sh
 ./barom.sh -t ${TG_CHAT_ID} ${TG_TOKEN}
 ./barom.sh --ccache-dir "${WORKDIR}/ccache" --ccache-size 20G
 ./barom.sh --device liber --lunch voltage_liber-userdebug
-./barom.sh -b -j 8 -n voltage -u "gof sf fio" --timer 95m -- brunch voltage_liber-userdebug
+./barom.sh -b -j 6 -n voltage -u "gof sf fio" --timer 95m -- brunch voltage_liber-userdebug
 
 # end
