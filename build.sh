@@ -9,6 +9,6 @@ chmod +x barom.sh
 ./barom.sh -t ${TG_CHAT_ID} ${TG_TOKEN}
 ./barom.sh --ccache-dir "${WORKDIR}/ccache" --ccache-size 20G
 ./barom.sh --device liber --lunch lineage_liber-userdebug
-./barom.sh -b -j 4 -n risingOS -u "gof sf fio" --timer 95m -- brunch lineage_liber-userdebug
+./barom.sh -b -j4 -j 4 -n risingOS -u "gof sf fio" --timer 95m -- brunch lineage_liber-userdebug
 
 # end
